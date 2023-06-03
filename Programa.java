@@ -17,12 +17,14 @@ public class Programa {
         mensalidade = 60.0;
       } else if (idade >= 16 && idade <= 18) {
         mensalidade = 75.0;
-      } else if (idade <= 25) {
+      } else if (idade >= 19 && idade <= 30) {
         mensalidade = 90.0;
-      } else if (idade <= 40) {
+      } else if (idade >= 31 && idade <= 40) {
         mensalidade = 85.0;
+      } else if (idade >= 41 && idade <= 50) {
+        mensalidade = 80.0;
       } else {
-        mensalidade = 800.0;
+        mensalidade = 60.0;
       }
     } else if (sexo.equalsIgnoreCase("F")) {
       if (idade <= 15) {
