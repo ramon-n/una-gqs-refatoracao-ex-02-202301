@@ -4,6 +4,9 @@ public class Programa {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
 
+    boolean executar = true;
+
+    while (executar) {
     System.out.print("Informe a idade do cliente: ");
     int idade = scanner.nextInt();
 
@@ -44,6 +47,13 @@ public class Programa {
     }
 
     System.out.println("Valor da mensalidade: R$" + mensalidade);
+
+    System.out.print("Deseja fazer outro cálculo? (S/N): ");
+    String resposta = scanner.next();
+    if (!resposta.equalsIgnoreCase("S")) {
+      executar = false;
+    }
+  }
 
     scanner.close();
   }
