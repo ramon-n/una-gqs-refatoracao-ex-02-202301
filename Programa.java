@@ -15,7 +15,7 @@ public class Programa {
     if (sexo.equalsIgnoreCase("M")) {
       if (idade <= 15) {
         mensalidade = 60.0;
-      } else if (idade <= 18) {
+      } else if (idade >= 16 && idade <= 18) {
         mensalidade = 75.0;
       } else if (idade <= 25) {
         mensalidade = 90.0;
